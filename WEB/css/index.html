@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        
+        body{
+            margin: 0;
+            height: 100vh;
+            background-color: rgb(172, 221, 242);
+
+        }
+       
+        .flex{
+            display: flex;
+        }
+        .baise{
+            background-color: rgb(243, 247, 248);
+        }
+        .flex1{
+            flex: 1;
+        }
+        .colum{
+            flex-direction: column;
+        }
+        .mg8{
+            margin: 8px;
+        }
+        .mgr8{
+            margin right: 8PX;
+        }
+        .mgt8{
+            margin-top: 8px;
+        }
+        .yy{
+            box-shadow: 2px 4px 6px rgb(254, 185, 185);
+        }
+        .zlj{
+            padding: 10px 20px;
+            border-bottom: 1px solid #eda6a6;
+            font-size: 16px;
+            color: #e69595;
+            align-items: center;
+        }
+        .pink{
+            text-decoration: none;
+            color: pink;
+        }
+        .blue{
+            text-decoration: none;
+            color: rgb(111, 220, 237);
+        .fudong{
+            float: left;
+        }
+    </style>
+    <body class="flex">
+        <!-- 侧边栏 -->                                 
+        <div style="width: 200px; z-index: 1;" class="baise yy">
+            <!-- 头像栏 -->
+            <div style="padding: 10PX; 
+            align-items: center; 
+            justify-content: center;
+            border-bottom: 1px solid #e69595;
+            height: 60px;" 
+            class="flex yy">
+                <img src="https://img.keaitupian.cn/uploads/2022/04/18/e9e987425424484c8da05dec2a291876.jpg" 
+                width="50px" 
+                height="50px" 
+                aLt="无聊的柠檬">
+                <div style="margin-left: 10PX;">无聊的柠檬</div>
+            </div>
+            <!-- 导航栏 -->
+            <div class="flex1">
+                <div class="zlj pink"><a class="zlj pink" href="https://www.bilibili.com/" target="_blank">B站</a></div>
+                <div class="zlj pink"><a class="zlj pink" href="https://github.com/" target="_blank">Github</a></div>
+                <div class="zlj pink"><a class="zlj pink" href="https://www.csdn.net/" target="_blank">CSDN</a></div>
+                <div class="zlj pink"><a class="zlj pink" href="https://www.runoob.com/" target="_blank">菜鸟教程</a></div>
+                <div class="zlj pink"><a class="zlj pink" href="https://www.w3school.com.cn/" target="_blank">W3school</a></div>
+                <div class="zlj pink"><a class="zlj pink" href="https://codepen.io/features/" target="_blank">CodePen</a></div>  
+                <div class="zlj pink"><a class="zlj pink" href="https://chinese.freecodecamp.org/" target="_blank">FreeCodeCamp</a></div>  
+            </div>
+            
+        </div>
+        
+        <!-- 主区域 -->
+        <div class="flex1 flex colum">
+            <!-- 头部栏 -->
+        <div style="height: 80px; z-index: 1;" class="baise yy"></div>
+        <!-- 内容区 -->
+        <div style="overflow: auto;" class= "flex1 flex">
+            <!-- 左区 -->
+            <div style="flex: 3;" class="flex colum mg8 yy">
+            <!-- 数据区 -->
+            <div class="flex">
+                <!-- 数据块 -->
+                <div style="height: 100PX;" class="flex1 baise mgr8 yy"></div>
+                <div style="height: 100PX;" class="flex1 baise mgr8 yy"></div>
+                <div style="height: 100PX;" class="flex1 baise mgr8 yy"></div>
+                <div style="height: 100PX;" class="flex1 baise yy"></div>
+                </div>
+            <!-- 列表区 -->
+            <div class="flex colum yy">
+                <!-- 列表项 -->
+                <div style="height: 160px;" class="baise mgt8 yy"></div>
+                <div style="height: 160px;" class="baise mgt8 yy"></div>
+                <div style="height: 160px;" class="baise mgt8 yy"></div>
+                <div style="height: 160px;" class="baise mgt8 yy"></div>
+            </div>
+            </div>
+
+
+            <!-- 右区 -->
+            <div style="flex:1; z-index: 1;" class="flex colum mg8 ">
+            <!-- 提示区 -->
+            <div style="height: 150PX;" class="baise yy">
+                <a class="blue" href="../demo/demo1渐变.html" target="_blank">demo1渐变</a>
+                </div>
+            <!-- 消息区 -->
+            <div style="height: 300PX;" class="baise mgt8 yy fudong">2</div>
+            <!-- xx区 -->
+            <div style="height: 450PX;" class="baise mgt8 yy">3</div>
+            <!-- xx区 -->
+            <div style="height: 600PX;" class="baise mgt8 yy">4</div>
+              </div>
+           </div>
+        </div>
+</body>
+</html>

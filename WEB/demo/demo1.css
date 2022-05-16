@@ -1,0 +1,37 @@
+body{
+    /* 初始化页面 取消内外边距 */
+    margin: 0;
+    padding: 0;
+    /* 100%窗口高度 */
+    height: 100vh;
+    /* 弹性布局 水平*垂直居中 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* 渐变背景 */
+    background: linear-gradient(125deg,#1e7319,#2b8aac,#e8a7cf,#2fe0dd,#d7dd21);
+    /* 指定背景图像大小 */
+    background-size: 500%;
+    /* 执行动画方法： 动画名 时长 线时长 无限次播放 */
+    animation: bganimation 15s infinite;
+}
+.text{
+    color: azure;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    /* 字间距 */
+    letter-spacing: 5px;
+}
+
+/* 定义动画 */
+@keyframes bganimation{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
