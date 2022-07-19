@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+
+    <title>迷你音乐播放器</title>
+    <!-- 字体图标库 -->
+    <link rel="stylesheet" href="/fonts/css/font-awesome.css">
+    <link rel="stylesheet" href="./8.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="bg"></div>
+        <div class="bg-mask"></div>
+        <div class="player">
+            <div class="player-track">
+                <div class="album-name"></div>一路向北
+                <div class="track-name">周杰伦 - 一路向北</div>
+                <div class="track-time">
+                    <div class="current-time">00:00</div>
+                    <div class="total-time">03:50</div>
+                </div>
+                <div class="progress-box">
+                    <div class="hover-time">00:36</div>
+                    <div class="hover-bar"></div>
+                    <div class="progress-bar"></div>
+                </div>
+            </div>
+            <div class="player-content">
+                <div class="album-cover">
+                    <img src="./img/一路向北.jpg" alt="" class="active">
+                    <img src="./img/借口.jpg" alt="">
+                    <img src="./img/夜曲.jpg" alt="">
+                    <img src="./img/搁浅.jpg" alt="">
+                    <img src="./img/枫.jpg" alt="">
+                </div>
+                <div class="play-controls">
+                    <div class="control">
+                        <div class="button play-prev">
+                            <i class="fa fa-step-backward"></i>
+                        </div>
+                    </div>
+                    <div class="control">
+                        <div class="button play-pause">
+                            <i class="fa fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="control">
+                        <div class="button play-next">
+                            <i class="fa fa-step-forward"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./8.js"></script>
+</body>
+
+</html>
