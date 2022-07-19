@@ -1,0 +1,118 @@
+/* 清除页面样式 */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* 盒子设置 */
+.container{
+    /* 长宽 */
+    width: 100vw;
+    height: 100vh;
+    /* 弹性盒子 */
+    display: flex;
+    /* 纵轴居中 */
+    align-items: center;
+    /* 横轴居中 */
+    justify-content: center;
+    /* 背景图片 不平铺 */
+    background: url(./javier-miranda-W-ppBwJZSV8-unsplash.jpg) fixed no-repeat;
+    background-size: cover;
+}
+
+/* 表单设置 */
+.login-form{
+    width: 250px;
+    height: 250px;
+    display: flex;
+    /* 表格a垂直显示 */
+    flex-direction: column;
+    /* 间距40 */
+    padding: 40px;
+    /* 文本居中对齐 */
+    text-align: center;
+    /* 相对定位 */
+    position: relative;
+    /* 设置层级 */
+    z-index: 100;
+    /* 背景继承 */
+    background: inherit;
+    /* 圆角设置 */
+    border-radius: 10px;
+    /* 溢出隐藏 */
+    overflow: hidden;
+}
+.login-form::before{
+    content: "";
+    width: calc(100% + 20PX);
+    height: calc(100% + 20px);
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    overflow: hidden;
+    background: inherit;
+    box-shadow: inset 0 0 0 200px rgba(86, 99, 125, 0.25);
+    filter: blur(5px);
+    z-index: -1;
+}
+
+/*  */
+.login-form h2{
+    top: 20px;
+    font-size: 20px;
+    font-weight: 400;
+    color: rgb(62, 179, 179);
+}
+
+/* 设置点击输入框 变颜色 */
+.login-form input:focus-within,
+.login-form button:focus-within
+{
+    /* 设置盒子阴影 */
+    box-shadow:inset 0 0 0 200px rgba(117, 173, 223, 0.2) ;
+    /* 设置点击动画 */
+    transition: box-shadow 0.5s;
+}
+
+/* 设置输入框样式 */
+.login-form input,
+.login-form button{
+    margin: 6px 0;
+    height: 36px;
+    border: none;
+    background-color:rgba(219, 230, 230, 0.3) ;
+    border-radius: 4px;
+    padding: 0 14px;
+    color: rgb(2, 34, 60);
+}
+
+/*输入框字体颜色 */
+.login-form input::placeholder{
+    color: rgb(87, 52, 9);
+}
+
+.login-form input:focus,
+.login-form button:focus{
+    outline: 0;
+}
+
+.login-form button{
+    margin-top: 20px;
+    background-color: rgba(81, 149, 198, 0.25);
+    color: rgb(203, 210, 210);
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.login-form button:hover{
+    background-color:rgba(44, 120, 233, 0.5);
+}
+
+
+
+
+
+
+
+
