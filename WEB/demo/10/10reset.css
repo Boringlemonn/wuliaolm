@@ -1,0 +1,60 @@
+/* 页面初始化 */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* 设置页面样式 */
+body{
+    min-height: 100vh;
+    /* 设置弹性盒 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* 切换页面时有动画效果 */
+    transition: background-color .5s ease-in-out;
+}
+
+/* 设置字体样式 */
+.container .title{
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    /* 不让字体被选中 */
+    user-select: none;
+    transition: color .5s ease-in-out;
+}
+
+.container .switch-btns{
+    display: flex;
+    margin-top: 32px;
+}
+
+.container .switch-btns .btn{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 20px;
+    user-select: none;
+    /* 鼠标悬浮小手指 */
+    cursor: pointer;
+}
+
+.container .switch-btns .white{
+    background-color: rgb(190, 220, 220);
+}
+.container .switch-btns .dark{
+    background-color: rgb(1, 12, 12);
+}
+
+.container .switch-btns .red{
+    background-color: rgb(230, 87, 74);
+}
+
+.container .switch-btns .blue{
+    background-color: rgb(31, 233, 233);
+}
+
+

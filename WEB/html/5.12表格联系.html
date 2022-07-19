@@ -7,7 +7,21 @@
     <title>表格案例</title>
 </head>
 <body>
-    <table align="center" width="500" height="250" border="1" cellspacing="0">
+    <table align="center" cellspacing="0">
+        <style>
+            table{
+                height: 250px;
+                width: 500px;
+            }
+            table,th,
+            td{
+                border: 1px pink solid;
+                /* 合并相邻边框 */
+                border-collapse: collapse;
+                font-size: 14px;
+                text-align: center;
+            }
+        </style>
 <thead>
         <tr> 
         <TH>排名</TH>  

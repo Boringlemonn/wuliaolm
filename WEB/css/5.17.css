@@ -1,0 +1,36 @@
+body{
+    font-size: 16px/28PX "Microsoft YaHei";
+}
+h1{
+    text-align: center;
+    font-weight: 400;
+}
+h4{
+    text-align: left;
+}
+.tq{
+    /* 去掉链接下划线 */
+    text-decoration: none;
+    /* 文字颜色 */
+    color: aquamarine;
+   
+}
+.a1{
+    /* 设置居中 */
+    text-align: center;
+    /* 文字颜色 */
+    color: #888888;
+    /* 文字大小 */
+    size: 12px;
+}
+div p{
+    text-indent: 2em;
+}
+.tp{
+    text-align: center;
+}
+.db{
+    color: #888888;
+    font-size: 12px;
+    text-align: center;
+}

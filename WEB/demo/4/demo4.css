@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top,#b3cce6,rgb(149, 186, 223));
+}
+.nav{
+    display: flex;
+    list-style: none;
+    background-color: rgb(244, 197, 197);
+    width: 900px;
+    max-width: 90vw;
+}
+.nav li{
+    min-width: 130px;
+    padding: 12px 0;
+    /* border: 1px solid red;辅助作用 */
+    transition: 0.3s;
+}
+.nav li:hover{
+    background-color: rgb(232, 178, 178);
+}
+.nav li a{
+    text-decoration: none;
+    color: rgb(162, 243, 243);
+    letter-spacing: 3px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+.nav li a span{
+    position: relative;
+    transition: 0.3s;
+}
+.nav li a span::before{
+    content: attr(data-text);
+    position: absolute;
+    transition: translateY(130%);
+}
+.nav li a:hover span{
+    transition: translateY(-130%);
+}

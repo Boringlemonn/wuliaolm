@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伪类选择器</title>
+</head>
+<style>
+    /* 未点击过的的链接 */
+    a:link{
+        color: rgb(151, 110, 227);
+        text-decoration: none;
+    }
+    /* 选择点击过的那个链接 */
+    a:visited{
+        color: rgb(191, 224, 24);
+    }
+    /* 鼠标经过的那个链接 */
+    a:hover{
+        color: darkslategrey;
+    }
+    /* 鼠标正在按下还没有弹起的那个链接 */
+    a:active{
+        color: brown;
+    }  
+</style>
+
+
+<!-- :focus伪类选择器 -->
+<style>
+    input:focus{
+        /* 选择表单时更改背景颜色 */
+        background-color: pink;
+        /* 修改文字时修改颜色 */
+        color: rgb(179, 240, 249);
+    }
+</style>
+<body>
+    <a href="#" target="_blank">123</a>
+    <a href="#" target="_blank">123</a>
+    <a href="AS#" target="_blank">124</a>
+    <BR>
+    <input type="text" value="147">
+</body>
+</html>

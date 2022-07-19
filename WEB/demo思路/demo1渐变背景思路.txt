@@ -1,0 +1,33 @@
+html
+链接css
+文字 设置 css选择器
+
+css
+将页面初始化
+内外边距为0
+高度设置100
+设置弹性布局 水平 垂直居中
+display flex
+justify conten center
+align-items
+
+渐变背景
+background  linear-gradient （125deg 颜色 颜色）
+背景图像大小
+background-size 500%
+
+执行动画
+animation： bganimation 时长 线时长  无限次播放
+
+
+设置文字
+采用类选择器
+
+
+
+定义动画
+@keyframes bganimation{
+0%
+50%
+100%
+}

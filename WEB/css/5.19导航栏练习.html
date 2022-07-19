@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+ <!-- 1.将行内元素改为行内块元素  设置长宽  
+      2.文字需要水平居中
+      3.链接需要设置背景图片
+      4.鼠标经过需要变色 -->
+       <style>
+           .wu a{
+               /* 将行内元素改为行内块元素 */
+             display: inline-block;
+             /* 去掉下划线 */
+             text-decoration: none;
+             /* 设置长宽 */
+             width: 120px;
+             height: 58px;
+             background-color: aqua;
+             /* 文字设置居中 */
+             text-align: center;
+             /* 设置文字上下居中 */
+             line-height: 58px;
+             /* 设置文字颜色 */
+             color: white;
+           }
+           /* 设置背景图片 */
+       .wu .bj1{
+             background-image: url(./bg1.png); no-repeat;
+         }
+         /* 设置鼠标经过时背景图片 */
+         .wu .bj1:hover{
+            background-image: url(./bg2.png); 
+         }
+         .wu .bj2{
+             background-image: url(./bg3.png); no-repeat;
+         }
+         .wu .bj2:hover{
+            background-image: url(./bg4.png); 
+         }
+       </style>
+<body>
+    <div class="wu">
+    <a href="#" class="bj1">五彩链接</a>
+    <a href="#" class="bj2">五彩链接</a>
+    <a href="#" class="bj3">五彩链接</a>
+    <a href="#" class="bj4">五彩链接</a>
+    <a href="#" class="bj5">五彩链接</a>
+
+    </div>
+</html>

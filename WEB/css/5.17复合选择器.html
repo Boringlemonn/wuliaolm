@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>复合选择器练习</title>
+</head>
+<body>
+    <!-- 后代选择器 -->
+    <style>
+        ul li{
+            color: aqua;
+        }
+        .AAAA li a{
+            color: rgb(98, 155, 164);
+        }
+    </style>
+    <ul>123
+        <li>123</li>
+        <li>123</li>
+        <li>123</li>
+        <li>123</li>
+    </ul>
+    <ol class="AAAA">
+        <li>123</li>
+        <li>123</li>
+        <li>123</li>
+        <li>123</li>
+        <li><a href="#">12312313231123</a></li>
+        <li><a href="#">12312313231123</a></li>
+        <li><a href="#">12312313231123</a></li>
+        <li><a href="#">12312313231123</a></li>
+        <li><a href="#">12312313231123</a></li>
+    </ol>
+<!-- 子元素选择器 -->
+<style>
+    .AB>a{
+       color: aqua;
+    }
+</style>
+    <div class="AB">
+       <a href="#">123</a>
+       <p><a href="#">123</a></p>
+       <ul>
+        <p><a href="#">123</a></p>
+        <p><a href="#">123</a></p>
+        <p><a href="#">123</a></p>
+    </ul>
+    </div>
+    <!-- 并集选择器 -->
+    <hr>
+    <style>
+      .q,
+      #a,
+      .qw{
+            color: rgb(191, 9, 61);
+        }
+    </style>
+    <div>
+        <P class="q">周杰伦</P>
+        <h3>李荣浩</h3>
+        <a href="#">林俊杰</a>
+        <ul id="a">123
+            <li>听歌</li>
+            <li class="qw">音乐</li>
+            <li>节奏</li>
+        </ul>
+    </div>
+    <hr>
+    <!-- 交集选择器 -->
+    <style>
+  ul li a.qwe{
+            color: blue;
+        }
+    </style>
+        <ul>
+            <li>
+                <a href="#" class="qwe">123</a>
+            </li>
+            <li>123</li>
+            <li>123</li>
+            <li>
+                <a href="#" class="qwe">123</a>
+            </li>
+            <li>123</li>
+
+</body>
+</html>
